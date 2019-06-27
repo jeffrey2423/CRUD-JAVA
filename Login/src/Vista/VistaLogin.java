@@ -16,6 +16,7 @@ import java.awt.event.MouseMotionAdapter;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRootPane;
 import javax.swing.border.Border;
@@ -86,11 +87,13 @@ public class VistaLogin extends javax.swing.JFrame {
         jPanelLogin.setBackground(new java.awt.Color(255, 255, 255));
 
         jButtonIniciarSesion.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonIniciarSesion.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButtonIniciarSesion.setText("Iniciar Sesion");
         jButtonIniciarSesion.setContentAreaFilled(false);
         jButtonIniciarSesion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButtonIniciarSesion.setFocusPainted(false);
         jButtonIniciarSesion.setOpaque(true);
+        jButtonIniciarSesion.setSelected(true);
         jButtonIniciarSesion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jButtonIniciarSesionMousePressed(evt);
@@ -102,11 +105,13 @@ public class VistaLogin extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Documento de identidad:");
 
         jLabel2.setFont(new java.awt.Font("Roboto Light", 0, 24)); // NOI18N
         jLabel2.setText("Log In");
 
+        jTextField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jTextField1.setBorder(null);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,8 +119,10 @@ public class VistaLogin extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("Contraseña:");
 
+        jPasswordField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jPasswordField1.setBorder(null);
 
         javax.swing.GroupLayout jPanelLoginLayout = new javax.swing.GroupLayout(jPanelLogin);
@@ -282,7 +289,7 @@ public class VistaLogin extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciarSesionActionPerformed
-        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "hhgghghghgh");
     }//GEN-LAST:event_jButtonIniciarSesionActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
