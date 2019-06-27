@@ -20,8 +20,8 @@ public class ConsultasLogin {
     private String sSQL =   "";
     
     // Query
-    sSQL =  "INSERT INTO USERS (first_name, last_name) VALUES (?, ?)";
+    //sSQL =  "INSERT INTO USERS (first_name, last_name) VALUES (?, ?)";
     // PreparedStatement
-    PreparedStatement pstm = conn.prepareStatement(sSQL);
+    //PreparedStatement pstm = conn.prepareStatement(sSQL);
     
 }
